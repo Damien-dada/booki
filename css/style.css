@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px 50px 0px 50px;
 }
 
 .main-container {
@@ -57,29 +58,153 @@ a {
     text-decoration: none;
 }
 
+ul{
+    list-style-type: none;
+  }
+
 /****** Header ***********/
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
-.logo {
-    padding: 30px 50px 30px 50px;
+.logobooki {
+    display: flex;
+    width: 61.09px;
+    height: 19px;
+    padding: 30px 50px 30px 0px;
+    flex-direction: column;
+    align-items: self-start;
 }
 
-.liens-header:hover {
+.ul-nav {
+    display: flex;
+    gap: 68px;
+    width: 244px;
+    height: 35px;
+}
+
+.li-nav:hover {
     border-top: solid #0065FC 2px ;
     color: #0065FC;
+    padding-top: 10px;
+    
 }
 
 .div-header {
     display: flex;
     flex-direction: row;
-    gap: 68px; 
+    width: 100%;
+}
+
+       
+
+
+/****** Section recherche ***********/
+
+form {
+    display: flex;
+    width: 500px;
+    height: 50px;
+    justify-content: space-between;
+    gap: 24px;
+    border-radius: 15px;
+    border: 1px solid var(--grey, #F2F2F2);
+    background: var(--white, #FFF);
+    margin-top: 35px;
+    padding: 0;
+}
+
+.dot1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 62px;
+    height: 50px;
+    border: #F2F2F2 1px solid;    
+    border-radius: 15px 0px 0px 15px;
+    padding: 0px
+}
+
+.fa-location-dot {
+    color: black;
+}
+
+input {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+input[type="text"] {
+    outline: none;
+    border: 0
+}
+
+input[type="submit"] {
+    display: flex;
+    height: 49px;
+    padding: 15px 16px;
+    gap: 10px;
+    color: var(--white, #FFF);
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid var(--blue, #0065FC);
+    background: var(--blue, #0065FC);    
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+align-items: center;
 }
 
 
+.ul-filtres {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+
+
+.choix-filtre {
+    display: flex;
+    height: 50px;
+    padding: 4px 19px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 31px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+}
+
+.choix-filtre:hover {
+   background-color: #DEEBFF; 
+}
+
+.fa-info {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    margin-right: 10px;
+}
+
+.i500 {
+    display: flex;
+    align-items: center;
+
+}
 
 
 /****** Hebergements And Populaires ***********/
@@ -130,6 +255,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    display: block;
 }
 
 .populaires-cards .card-title {
