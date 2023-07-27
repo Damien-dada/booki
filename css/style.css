@@ -318,7 +318,13 @@ article-recherche {
 
 .card3 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 30px;
+    height: 439px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 .card3 img {
@@ -326,6 +332,10 @@ article-recherche {
     height: 380px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
+}
+
+.card-title {
+    padding-left: 15px;
 }
 
 
