@@ -56,6 +56,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 ul{
@@ -63,11 +64,11 @@ ul{
   }
 
 /****** Header ***********/
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
 }
 
 .logobooki {
@@ -81,10 +82,10 @@ nav {
 
 .ul-nav {
     display: flex;
-    gap: 68px;
-    width: 244px;
-    height: 35px;
+    padding: 0px;
+    gap: 50px;
 }
+
 
 .li-nav:hover {
     border-top: solid #0065FC 2px ;
@@ -118,7 +119,7 @@ h1 {
 
 form {
     display: flex;
-    width: 35%;
+    width: 30%;
     border-radius: 15px;
     border: 1px solid var(--grey, #F2F2F2);
     background: var(--white, #FFF);
@@ -213,6 +214,7 @@ input[type="button"] {
 
 .choix-filtre:hover {
    background-color: #DEEBFF; 
+   cursor: pointer;
 }
 
 .fa-info {
@@ -268,7 +270,6 @@ input[type="button"] {
 .lien-hebergement-a-marseilles {
     width: 31%;
     padding-bottom: 30px;
-  
 }
 
 .card-title-hebergements {
@@ -285,10 +286,15 @@ input[type="button"] {
 }
 
 .article-hebergement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    min-height: 230px;
+
 }
 
 .card-content-hebergement {
@@ -498,9 +504,6 @@ footer {
         font-size: 11px;
     }
 
-    .article-hebergement {
-        height: 100%;
-    }
 
     .hebergements-cards {
         display: flex;
@@ -511,9 +514,7 @@ footer {
         padding-top: 30px;
     }
 
-    .carte-activite-image {
-        height: 100%;
-    }
+
 
     .carte-activite-image img {
         height: 200px;
@@ -542,6 +543,19 @@ footer {
         flex-direction: column;
         justify-content: center;
     }
+
+    .logobooki {
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ul-nav {
+        gap: 0px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
 
     .lien-logo {
         display: flex;
@@ -607,6 +621,7 @@ footer {
 
     .hebergements {
         width: 100%;
+        margin-top: 20px;
     }
     
     .hebergements-cards {
